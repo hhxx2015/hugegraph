@@ -32,7 +32,7 @@ RUN set -e \
     && ./bin/init-store.sh
 
 # 3. Prepare for HugeGraph Studio
-ENV STUDIO_VERSION 0.10.0
+ENV STUDIO_VERSION 0.12.0
 # (Optional) You can set the ip of github to speed up the local build
 # && echo "192.30.253.112 github.com\n151.101.44.249 github.global.ssl.fastly.net" >> /etc/hosts \
 RUN set -e \
