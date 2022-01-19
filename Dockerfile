@@ -19,7 +19,7 @@ RUN set -x \
 # 2. Init HugeGraph Sever
 # (Optional) You can set the ip of github to speed up the local build
 # && echo "192.30.253.112 github.com\n151.101.44.249 github.global.ssl.fastly.net" >> /etc/hosts \
-ENV SERVER_VERSION 0.10.4
+ENV SERVER_VERSION 0.12.0
 RUN set -e \
     && mkdir -p /root/hugegraph-server \
     && curl -L -S ${PKG_URL}/hugegraph/releases/download/v${SERVER_VERSION}/hugegraph-${SERVER_VERSION}.tar.gz -o /root/server.tar.gz \
